@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>togging</title>
+</head>
+<body>
+    <button id="mode">click change to mode</button>
+
+    <script>
+        var btnmode = document.querySelector('#mode');
+        
+        let crmode = 'white';
+        btnmode.addEventListener('click',() => {
+            if (crmode ==='white') {
+                crmode='black';
+                document.querySelector('body').style.backgroundColor= 'black';
+            } else {
+                crmode='white';
+                document.querySelector('body').style.backgroundColor= 'white';
+            }
+            console.log(crmode);
+        })
+    </script>
+</body>
+</html>
